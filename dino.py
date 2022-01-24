@@ -6,7 +6,7 @@ from pygame import *
 
 pygame.init()
 
-screen_size_display = (width_screen, height_screen) = (600, 150)
+screen_size_display = (width_screen, height_screen) = (750, 350)
 FPS = 60
 gravity = 0.6
 
@@ -299,7 +299,7 @@ def introduction_screen():
     t_ground_rect.left = width_screen / 20
     t_ground_rect.bottom = height_screen
 
-    logo,l_rect = load_image('logo.png',300,140,-1)
+    logo,l_rect = load_image('logo.png',0,0,-1)
     l_rect.centerx = width_screen * 0.6
     l_rect.centery = height_screen * 0.6
     while not starting_game:
